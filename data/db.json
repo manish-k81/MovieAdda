@@ -1,0 +1,19 @@
+{
+    "movies":[
+        {
+            "title":"Dune",
+            "director":"Robin steward",
+            "id":1
+    },
+        {
+        "title":"HarryPotter",
+        "director":"JK.Rowling",
+        "id":2
+    },
+        {
+        "title":"One Piece",
+        "director":"Ichiro Oda",
+        "id":3
+    }
+    ]
+}
