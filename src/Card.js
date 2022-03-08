@@ -7,15 +7,22 @@ function Card() {
 
     useEffect(()=>{
         const fetchData = async () => {
-        const result = await axios.get('http://localhost:5000/movies');
+        const result = await axios.get('http://localhost:8000/movies');
         // console.log(result.data)
         setMovies(result.data)
         }
         fetchData()
     },[])
-    
+
+    const MovieValues = Object.values(movies)
 return (
     <div className='cards'>
+        {
+            MovieValues.forEach(mv=>{
+                <p>{mv.title}</p>
+                console.log(mv.title)
+            })
+        }
     </div>
 )
 }
